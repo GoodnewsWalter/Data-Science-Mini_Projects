@@ -1,0 +1,45 @@
+# Mini-Project: Basic Python Calculator
+
+## Objective
+In this project, you will build a functional calculator right inside a Jupyter Notebook. 
+You will apply your knowledge of Python functions to create reusable blocks of code for basic arithmetic operations 
+(addition, subtraction, multiplication, and division), and use conditional logic to process user input.
+
+## Prerequisites
+Before you begin, ensure you understand:
+* How to define custom functions using the `def` keyword.
+* How to pass arguments (parameters) into functions.
+* How to use the `return` statement to send data back from a function.
+* How to capture user input and convert it to floating-point numbers (`float()`).
+* How to execute code cells in a Jupyter environment.
+
+## Step-by-Step Instructions
+
+### Step 1: Set Up Your Notebook
+1. In your workspace, create a new notebook file named `calculator.ipynb`.
+2. All your code for this project will go inside a single code cell (or a few cells) in this file.
+
+### Step 2: Define Your Math Functions
+Create four separate functions for the basic math operations. Each function should take two parameters (e.g., `x` and `y`).
+1. Define `add(x, y)` that returns the sum of x and y.
+2. Define `subtract(x, y)` that returns the difference (x - y).
+3. Define `multiply(x, y)` that returns the product (x * y).
+4. Define `divide(x, y)` that returns the quotient (x / y). 
+   * *Challenge:* Add a quick `if` statement inside `divide` to return an error message (like `"Cannot divide by zero"`) if `y` is 0.
+
+### Step 3: Build the User Interface
+1. Below your functions, print a welcome message and a menu of options for the user (e.g., "Select operation: 1. Add, 2. Subtract, 3. Multiply, 4. Divide").
+2. Create a variable called `choice` to capture the user's input (`input("Enter choice (1/2/3/4): ")`).
+
+### Step 4: Capture the Numbers
+1. Ask the user to input the first number and store it in a variable (e.g., `num1`). Remember to convert the input to a `float()`.
+2. Ask the user to input the second number and store it in a variable (e.g., `num2`). Remember to convert it to a `float()`.
+
+### Step 5: Route the Logic
+1. Use an `if/elif/else` block based on the user's `choice`.
+2. If they chose "1", call the `add(num1, num2)` function, store the returned result, and print it.
+3. Repeat this logic using `elif` for subtraction, multiplication, and division.
+4. Add an `else` block to print "Invalid Input" if they typed something other than 1, 2, 3, or 4.
+
+*Note: To test your calculator, simply click inside your code cell and press **Shift + Enter** (or click the Play button at the top). 
+Text boxes will appear directly below the cell for you to type your choices and numbers!*
